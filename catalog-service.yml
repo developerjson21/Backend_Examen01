@@ -1,14 +1,12 @@
 server:
-  port : 8081
+  port : 8082
+
 spring:
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
-    show-sql: true
-  datasource:
-    url: jdbc:mysql://localhost:3306/movies
-    username: root
-    password: DevJson21
+  application:
+    name: catalog-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    register-with-eureka: true
