@@ -40,7 +40,7 @@ resilience4j:
 #Configuración del mecanismo de reintentos
   retry:
     instances:
-      subscription:
+      catalogGenre:
         maxAttempts: 3
         waitDuration: 3000
         retryExceptions:
