@@ -3,7 +3,20 @@ server:
 spring:
   application:
     name: catalog-service
-
+  sleuth:
+    sampler:
+    probability: 1.0
+  rabbitmq:
+    addresses: localhost:15672
+    virtual-host: app_vhost
+    username: guest
+    password: guest
+  zipkin:
+    baseUrl: http://localhost:9410/
+    enabled: true
+    sender:
+      type: rabbit
+      enabled: true
 eureka:
   client:
     service-url:
@@ -45,4 +58,5 @@ resilience4j:
         waitDuration: 3000
         retryExceptions:
           - feign.FeignException$InternalServerError
+
 
