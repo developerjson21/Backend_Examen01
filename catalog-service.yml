@@ -31,10 +31,12 @@ resilience4j:
       catalogGenre:
         allowHealthIndicatorToFail: false
         registerHealthIndicator: true
+        eventConsumerBufferSize: 10
         slidingWindowType: COUNT_BASED
-        slidingWindowSize: 5
+        slidingWindowSize: 10
         failureRateThreshold: 50
-        waitDurationInOpenState: 15000
+        waitDurationInOpenState: 5000
+        minimumNumberOfCalls: 5
         permittedNumberOfCallsInHalfOpenState: 3
         automaticTransitionFromOpenToHalfOpenEnabled: true  
 #Configuración del mecanismo de reintentos
