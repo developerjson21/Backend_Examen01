@@ -3,7 +3,11 @@ server:
 spring:
   application:
     name: serie-service
-
+  datasource:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: Netflix
 eureka:
   client:
     service-url:
