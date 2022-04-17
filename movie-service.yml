@@ -18,7 +18,11 @@ spring:
     url: jdbc:mysql://localhost:3306/movies
     username: root
     password: DevJson21
-
+  rabbitmq:
+    addresses: localhost:15672
+    virtual-host: app_vhost
+    username: guest
+    password: guest
 eureka:
   client:
     service-url:
