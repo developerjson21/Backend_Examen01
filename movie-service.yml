@@ -19,8 +19,7 @@ spring:
     username: root
     password: DevJson21
   rabbitmq:
-    addresses: localhost:15672
-    virtual-host: app_vhost
+    addresses: localhost:5672
     username: guest
     password: guest
 queue:
