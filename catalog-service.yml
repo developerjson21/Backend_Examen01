@@ -9,10 +9,20 @@ spring:
   zipkin:
     baseUrl: http://localhost:9411/
     enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+queue:
+  movie:
+    name: queueMovie
+  serie:
+    name: queueSerie
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka #Se cambio el hostname porque ya esta Dockerizado
+      defaultZone: http://localhost:8761/eureka 
     fetch-registry: true
     register-with-eureka: true
 
