@@ -14,7 +14,14 @@ spring:
   zipkin:
     baseUrl: http://localhost:9411/
     enabled: true
-    
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+queue:
+  movie:
+    name: queueSerie  
 eureka:
   client:
     service-url:
