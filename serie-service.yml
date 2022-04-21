@@ -19,9 +19,11 @@ spring:
     port: 5672
     username: guest
     password: guest
+
 queue:
   serie:
     name: queueSerie  
+    
 eureka:
   client:
     service-url:
