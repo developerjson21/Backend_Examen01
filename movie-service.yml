@@ -23,6 +23,9 @@ spring:
     virtual-host: app_vhost
     username: guest
     password: guest
+queue:
+  movie:
+    name: queueMovie
 eureka:
   client:
     service-url:
