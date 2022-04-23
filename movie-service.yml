@@ -22,10 +22,11 @@ spring:
   #password: 12345
   datasource:
     url: jdbc:mysql://localhost:3306/movies 
-    username: DevJson 
+    username: root 
     password: DevJson21 
   rabbitmq:
-    host: localhost #rabbit-mq
+    #host: rabbit-mq
+    host: localhost 
     port: 5672
     username: guest
     password: guest
