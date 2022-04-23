@@ -16,10 +16,14 @@ spring:
     baseUrl: http://zipkin:9411/
     enabled: true
   # db -> Se modifico el hostname y las contraseñas que previamente setee dentro del contenedor que builde dentro del docker-compose.yml
+  #datasource:
+  # url: jdbc:mysql://db-mysql:3306/movies 
+  # username: user
+  #password: 12345
   datasource:
-    url: jdbc:mysql://localhost:3306/movies #jdbc:mysql://db-mysql:3406/movies 
-    username: DevJson #user
-    password: DevJson21 #12345
+    url: jdbc:mysql://localhost:3306/movies 
+    username: DevJson 
+    password: DevJson21 
   rabbitmq:
     host: localhost #rabbit-mq
     port: 5672
